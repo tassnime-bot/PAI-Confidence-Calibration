@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
 
 # Project paths
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "results" / "calibration_bins.csv"
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT / "calibration_bins.csv"
 OUT = ROOT / "calibration_comparison.png"
 
 if not DATA.exists():
